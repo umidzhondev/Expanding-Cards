@@ -31,6 +31,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 .panels {
@@ -122,6 +129,10 @@ body {
         height: 60vh;
         border: 4px solid #fff;
     }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 576px) {
     .panel h3{
@@ -133,5 +144,9 @@ body {
         height: 40vh;
         border: 2px solid #fff;
         border-radius: 34px;
+    }
+    h1{
+        font-size: 1.7rem;
+        margin-bottom: 30px;
     }
 }
