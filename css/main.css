@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.container {
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.panel {
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    height: 80vh;
+    border-radius: 50px;
+    flex: .5;
+    cursor: pointer;
+    position: relative;
+    transition: flex .6s ease;
+    border: 5px solid #fff;
+}
+.panel:nth-child(1){
+    background-image: url("../image/image-1.webp");
+}
+.panel:nth-child(2){
+    background-image: url("../image/image-5.jpg");
+}
+.panel:nth-child(3){
+    background-image: url("../image/image-4.jpg");
+}
+.panel:nth-child(4){
+    background-image: url("../image/image-6.jpg");
+}
+.panel:nth-child(5){
+    background-image: url("../image/image-7.jpg");
+}
+
+.panel h3 {
+    font-size: 1.7rem;
+    position: absolute;
+    left: 34px;
+    bottom: 25px;
+    color: #fff;
+    margin: 0;
+    opacity: 0;
+    background-color: #0f70ed;
+    ;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity .3s ease-in .4s;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 95vw;
+    }
+    .panels{
+        gap: 15px;
+    }
+    .panel h3{
+        font-size: 1.5rem;
+        padding: 8px 12px;
+    }
+    .panel{
+        background-position-x: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .panels{
+        gap:7px;
+    }
+    .panel h3{
+        font-size: 1.2rem;
+        padding: 8px 12px;
+        left: 15px;
+    }
+    .panel{
+        height: 60vh;
+        border: 4px solid #fff;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .panel h3{
+        font-size: 1rem;
+        padding: 4px 8px;
+        left: 5px;
+    }
+    .panel{
+        height: 60vh;
+        border: 2px solid #fff;
+        border-radius: 34px;
+    }
+}
