@@ -8,6 +8,10 @@ body,
 html {
     overflow-x: hidden;
 }
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Medium.ttf");
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -121,12 +125,12 @@ body {
 }
 @media only screen and (max-width: 576px) {
     .panel h3{
-        font-size: 1rem;
-        padding: 4px 8px;
-        left: 5px;
+        font-size: 1.1rem;
+        padding: 6px 12px;
+        left: 10px;
     }
     .panel{
-        height: 60vh;
+        height: 40vh;
         border: 2px solid #fff;
         border-radius: 34px;
     }
