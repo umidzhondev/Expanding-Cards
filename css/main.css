@@ -137,6 +137,7 @@ h1{
 @media only screen and (max-width: 576px) {
     .container{
         height: auto;
+        justify-content: flex-start;
     }
     .panel h3{
         font-size: 1rem;
@@ -151,5 +152,6 @@ h1{
     h1{
         font-size: 1.4rem;
         margin-bottom: 20px;
+        margin-top: 40px;
     }
 }
