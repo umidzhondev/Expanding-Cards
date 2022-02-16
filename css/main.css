@@ -136,7 +136,7 @@ h1{
 }
 @media only screen and (max-width: 576px) {
     .panel h3{
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 6px 12px;
         left: 10px;
     }
