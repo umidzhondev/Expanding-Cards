@@ -141,12 +141,12 @@ h1{
         left: 10px;
     }
     .panel{
-        height: 40vh;
+        height: 45vh;
         border: 2px solid #fff;
         border-radius: 34px;
     }
     h1{
-        font-size: 1.7rem;
-        margin-bottom: 30px;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
     }
 }
